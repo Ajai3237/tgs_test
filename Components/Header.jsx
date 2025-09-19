@@ -21,16 +21,18 @@ function Header() {
 
     return (
         <header className="w-full z-50 bg-transparent absolute left-0 -top-23">
-            <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
+            <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-10 lg:py-6">
+
 
                 {/* Logo */}
-                <div className="flex-shrink-0 ">
+                <div className="flex-shrink-0">
                     <img
                         src="/Assets/logo.png"
                         alt="Logo"
-                        className="w-[300px] h-auto"
+                        className="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px] h-auto "
                     />
                 </div>
+
 
 
 
@@ -65,7 +67,7 @@ function Header() {
                                     animate={{ x: 0 }}
                                     exit={{ x: "100%" }}
                                     transition={{ duration: 0.28, ease: "easeInOut" }}
-                                    style={{borderRadius:'40px'}}
+                                    style={{ borderRadius: '40px' }}
                                     className={`
                                                 fixed top-30 right-0 z-40 h-80  
                                                 w-64 max-w-[85vw  bg-black/60 text-white flex items-center justify-center backdrop-blur-sm p-6

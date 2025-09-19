@@ -71,35 +71,45 @@ function Servicespage() {
     <>
       {/* Hero Section */}
       <div
-        className="relative w-full h-[640px] bg-cover bg-center overflow-hidden"
-        style={{
-          backgroundImage:
-            "url('/Assets/pexels-polina-kovaleva-5827854.jpg')", backgroundPosition: "center bottom -50px"
-        }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
-          <motion.h1
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 120, damping: 12 }}
-            className="text-white font-bold text-[55px] font-['Open Sans']"
-          >
-            Services
-          </motion.h1>
-          <motion.p
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="mt-4 text-lg text-gray-200 max-w-3xl font-['Roboto'] leading-[30px] tracking-[1.5px]"
-          >
-            Traits Global solutions Providing software and application development, web designing, hosting and IT support Services.
-            We are one of the trusted business advisors, assuring peace of mind through cultivated expertise, extensive resources,
-            and uncompromising services. We specialize in computer support and IT networking for the start-up and established
-            business. Also we are providing solutions as per the customer requirement.
-          </motion.p>
-        </div>
-      </div>
+  className="relative w-full h-[400px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
+  style={{
+    backgroundImage: "url('/Assets/pexels-polina-kovaleva-5827854.jpg')",
+    backgroundPosition: "center bottom -50px",
+  }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/40"></div>
+
+  {/* Content */}
+  <div className="relative mt-15 z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6">
+    <motion.h1
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ type: "spring", stiffness: 120, damping: 12 }}
+      className="text-white font-bold 
+                 text-3xl sm:text-4xl md:text-5xl lg:text-[55px] 
+                 font-['Open_Sans'] leading-snug"
+    >
+      Services
+    </motion.h1>
+
+    <motion.p
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.3, duration: 0.8 }}
+      className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl 
+                 text-gray-200 max-w-xl sm:max-w-2xl md:max-w-3xl 
+                  leading-relaxed sm:leading-[28px] md:leading-[30px] 
+                 tracking-[1px] sm:tracking-[1.2px] md:tracking-[1.5px]"
+    >
+      Traits Global solutions Providing software and application development,
+      web designing, hosting and IT support Services. We are one of the trusted
+      business advisors, assuring peace of mind through cultivated expertise,
+      extensive resources, and uncompromising services.
+    </motion.p>
+  </div>
+</div>
+
 
       {/* Services Section */}
       <section className="bg-white py-12 px-4 md:px-8">

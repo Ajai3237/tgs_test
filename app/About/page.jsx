@@ -72,35 +72,45 @@ function Aboutpage() {
     <>
       {/*  Section */}
       <div
-        className="relative w-full h-[640px] bg-cover bg-center overflow-hidden"
-        style={{
-          backgroundImage:
-            "url('/Assets/pexels-vojtech-okenka-127162-392018.jpg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
-          <motion.h1
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 120, damping: 12 }}
-            className="text-white font-bold text-[55px] font-['Open Sans']"
-          >
-            About <span className="text-[#FFAA01]">Us</span>
-          </motion.h1>
-          <motion.p
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="mt-4 text-lg text-gray-200 max-w-3xl font-['Roboto'] leading-[30px] tracking-[1.5px]"
-          >
-            We trust you will find our services useful to your business and we
-            are keen to engage with you on challenging assignments that
-            contribute to your growth. Our journey started over seven years ago,
-            offering basic IT services to SMEs in Kerala.
-          </motion.p>
-        </div>
-      </div>
+  className="relative w-full h-[400px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
+  style={{
+    backgroundImage:
+      "url('/Assets/pexels-vojtech-okenka-127162-392018.jpg')",
+  }}
+>
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black/40"></div>
+
+  {/* Content */}
+  <div className="relative mt-15 z-10 flex flex-col items-center justify-center h-full text-center px-4">
+    <motion.h1
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ type: "spring", stiffness: 120, damping: 12 }}
+      className="text-white font-bold 
+                 text-3xl sm:text-4xl md:text-5xl lg:text-[55px] 
+                 font-['Open_Sans'] leading-snug"
+    >
+      About <span className="text-[#FFAA01]">Us</span>
+    </motion.h1>
+
+    <motion.p
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.3, duration: 0.8 }}
+      className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl 
+                 text-gray-200 max-w-xl sm:max-w-2xl md:max-w-3xl 
+                 font-['Roboto'] leading-relaxed sm:leading-[28px] md:leading-[30px] 
+                 tracking-[1px] sm:tracking-[1.2px] md:tracking-[1.5px]"
+    >
+      We trust you will find our services useful to your business and we
+      are keen to engage with you on challenging assignments that
+      contribute to your growth. Our journey started over seven years ago,
+      offering basic IT services to SMEs in Kerala.
+    </motion.p>
+  </div>
+</div>
+
 
 
       {/* Features Section */}
