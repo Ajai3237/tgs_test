@@ -121,15 +121,21 @@ function Servicespage() {
           </h2>
 
 
-<div className="flex justify-center mb-10 sm:mb-16 md:mb-20 px-2 sm:px-4">
-  <div className="relative flex flex-wrap sm:flex-nowrap bg-gray-100 rounded-full p-1 sm:p-2 gap-2 sm:gap-3">
+          <div className="flex justify-center mb-10 sm:mb-16 md:mb-20 px-2 sm:px-4">
+  <div
+    className="
+      relative grid grid-cols-2 gap-3
+      sm:flex sm:flex-nowrap sm:bg-gray-100
+      rounded-full p-1 sm:p-2
+    "
+  >
     {services.map((service) => {
       const isActive = active === service.id;
       return (
         <button
           key={service.id}
           onClick={() => setActive(service.id)}
-          className={`relative flex items-center gap-1 sm:gap-2 
+          className={`relative flex items-center justify-center sm:justify-start gap-1 sm:gap-2
             px-3 py-2 sm:px-5 sm:py-3 
             text-sm sm:text-base md:text-lg
             rounded-full font-medium transition-colors duration-300
@@ -150,6 +156,7 @@ function Servicespage() {
     })}
   </div>
 </div>
+
 
 
           {/* Content */}
