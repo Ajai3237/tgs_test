@@ -30,49 +30,49 @@ function Careerpage() {
     return (
         <>
             <div
-  className="relative w-full h-[400px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
-  style={{
-    backgroundImage: "url('/Assets/6ecf84a53bbc285f800572554fd7fc56.jpg')",
-  }}
->
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/30"></div>
+                className="relative w-full h-[400px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
+                style={{
+                    backgroundImage: "url('/Assets/6ecf84a53bbc285f800572554fd7fc56.jpg')",
+                }}
+            >
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/30"></div>
 
-  {/* Content */}
-  <div className="relative mt-12 z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6">
-    <motion.h1
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 120, damping: 12 }}
-      className="text-white font-bold 
+                {/* Content */}
+                <div className="relative mt-12 z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6">
+                    <motion.h1
+                        initial={{ y: -100, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", stiffness: 120, damping: 12 }}
+                        className="text-white font-bold 
                  text-2xl sm:text-2xl md:text-5xl lg:text-[55px] 
-                 font-['Open_Sans'] leading-snug"
-    >
-      Build Your <span className="text-[#FFAA01]">Career</span> With Us
-    </motion.h1>
+                 font-['Roboto']leading-snug"
+                    >
+                        Build Your <span className="text-[#FFAA01]">Career</span> With Us
+                    </motion.h1>
 
-    <motion.p
-      initial={{ y: 50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.3, duration: 0.8 }}
-      className="mt-4 sm:mt-6 
+                    <motion.p
+                        initial={{ y: 50, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ delay: 0.3, duration: 0.8 }}
+                        className="mt-4 sm:mt-6 
                  text-sm sm:text-sm md:text-lg lg:text-xl 
                  text-gray-200 max-w-xl sm:max-w-2xl md:max-w-3xl 
                   leading-relaxed sm:leading-[28px] md:leading-[30px] 
                  tracking-[1px] sm:tracking-[1.2px] md:tracking-[1.5px]"
-    >
-      Join a passionate team shaping the future of web and software
-      development. At <span className="text-[#FFAA01]">Traits Global</span>,
-      we value innovation, creativity, and growth. 
-    </motion.p>
-  </div>
-</div>
+                    >
+                        Join a passionate team shaping the future of web and software
+                        development. At <span className="text-[#FFAA01]">Traits Global</span>,
+                        we value innovation, creativity, and growth.
+                    </motion.p>
+                </div>
+            </div>
 
 
             <div className="min-h-screen bg-white flex flex-col items-center px-4 py-12 font-['Roboto'] ">
                 {/* Heading Section */}
                 <div className="text-center max-w-2xl mb-10">
-                    <h2 className="" style={{ fontSize: "25px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif", color: "#333", textAlign: "center"  , marginBottom:'50px'}}>
+                    <h2 className="" style={{ fontSize: "25px", fontWeight: "bold", color: "#333", textAlign: "center", marginBottom: '50px' }}>
                         JOIN <span className="text-[#FFAA01]">OUR</span> TEAM
                         <div className="mt-2 w-20 h-[2px] bg-gray-300 mx-auto"></div>
                     </h2>
@@ -179,7 +179,7 @@ function Careerpage() {
                     </div>
 
 
-                    
+
                     <div className="relative flex-1 hidden lg:flex justify-center">
 
                         <p className="mt-4 text-sm md:text-base text-gray-300 max-w-md mx-auto lg:mx-0">
