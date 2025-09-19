@@ -21,7 +21,7 @@ function Header() {
 
     return (
         <header className="w-full z-50 bg-transparent absolute left-0 -top-23">
-            <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-10 lg:py-6">
+            <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-15 lg:py-6">
 
 
                 {/* Logo */}
