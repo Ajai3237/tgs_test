@@ -198,7 +198,7 @@ function Homepage() {
     <>
       {/* Home */}
 
-     <div className="relative w-full h-[500px] sm:h-[650px] md:h-[820px] overflow-hidden">
+     <div className="relative w-screen h-screen overflow-hidden">
   {/* Background Video */}
   <video
     src="/Assets/tgs_video.mp4"
