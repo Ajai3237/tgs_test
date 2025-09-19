@@ -67,12 +67,15 @@ function Header() {
                                     animate={{ x: 0 }}
                                     exit={{ x: "100%" }}
                                     transition={{ duration: 0.28, ease: "easeInOut" }}
-                                    className="absolute top-full z-40 bg-black/70 text-white backdrop-blur-md rounded-3xl mt-2"
-                                    style={{
-                                        right: "8px",  
-                                        width: "14rem",
-                                        padding: "1rem" 
-                                    }}
+                                    className="
+  absolute top-full 
+  right-2 sm:right-4 md:right-8 lg:right-0
+  z-40 
+  w-56 sm:w-60 md:w-72 lg:w-80 
+  bg-black/70 text-white 
+  backdrop-blur-md rounded-3xl 
+  p-4 sm:p-5 md:p-6 lg:p-8 mt-2
+"
 
                                 >
                                     <motion.ul
