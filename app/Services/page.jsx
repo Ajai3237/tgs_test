@@ -71,10 +71,10 @@ function Servicespage() {
     <>
       {/* Hero Section */}
       <div
-        className="relative w-full h-[400px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
+        className="relative w-full h-[550px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
         style={{
           backgroundImage: "url('/Assets/pexels-polina-kovaleva-5827854.jpg')",
-          backgroundPosition: "center bottom -50px",
+          // backgroundPosition: "center bottom px",
         }}
       >
         {/* Overlay */}
@@ -122,40 +122,40 @@ function Servicespage() {
 
 
           <div className="flex justify-center mb-10 sm:mb-16 md:mb-20 px-2 sm:px-4">
-  <div
-    className="
+            <div
+              className="
       relative grid grid-cols-2 gap-3
       sm:flex sm:flex-nowrap sm:bg-gray-100
       rounded-full p-1 sm:p-2
     "
-  >
-    {services.map((service) => {
-      const isActive = active === service.id;
-      return (
-        <button
-          key={service.id}
-          onClick={() => setActive(service.id)}
-          className={`relative flex items-center justify-center sm:justify-start gap-1 sm:gap-2
+            >
+              {services.map((service) => {
+                const isActive = active === service.id;
+                return (
+                  <button
+                    key={service.id}
+                    onClick={() => setActive(service.id)}
+                    className={`relative flex items-center justify-center sm:justify-start gap-1 sm:gap-2
             px-3 py-2 sm:px-5 sm:py-3 
             text-sm sm:text-base md:text-lg
             rounded-full font-medium transition-colors duration-300
             ${isActive ? "text-black" : "text-gray-700 hover:text-yellow-500"}`}
-        >
-          {/* Sliding background */}
-          {isActive && (
-            <motion.div
-              layoutId="active-pill"
-              className="absolute inset-0 bg-white rounded-full shadow-md"
-              transition={{ type: "spring", stiffness: 500, damping: 40 }}
-            />
-          )}
-          <span className="relative z-10 text-yellow-500 text-lg sm:text-xl">{service.icon}</span>
-          <span className="relative z-10">{service.title}</span>
-        </button>
-      );
-    })}
-  </div>
-</div>
+                  >
+                    {/* Sliding background */}
+                    {isActive && (
+                      <motion.div
+                        layoutId="active-pill"
+                        className="absolute inset-0 bg-white rounded-full shadow-md"
+                        transition={{ type: "spring", stiffness: 500, damping: 40 }}
+                      />
+                    )}
+                    <span className="relative z-10 text-yellow-500 text-lg sm:text-xl">{service.icon}</span>
+                    <span className="relative z-10">{service.title}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
 
 
 

@@ -72,7 +72,7 @@ function Aboutpage() {
     <>
       {/*  Section */}
       <div
-  className="relative w-full h-[400px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
+  className="relative w-full h-[550px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
   style={{
     backgroundImage:
       "url('/Assets/pexels-vojtech-okenka-127162-392018.jpg')",

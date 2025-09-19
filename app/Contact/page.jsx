@@ -10,7 +10,7 @@ function Contactpage() {
     <>
       {/*  Section */}
      <div
-  className="relative w-full h-[400px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
+  className="relative w-full h-[550px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
   style={{
     backgroundImage: "url('/Assets/4218ffd77125517d2f2600745397424e.jpg')",
   }}

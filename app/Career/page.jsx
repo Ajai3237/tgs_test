@@ -30,7 +30,7 @@ function Careerpage() {
     return (
         <>
             <div
-                className="relative w-full h-[400px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
+                className="relative w-full h-[550px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
                 style={{
                     backgroundImage: "url('/Assets/6ecf84a53bbc285f800572554fd7fc56.jpg')",
                 }}
