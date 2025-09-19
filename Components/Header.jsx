@@ -1,11 +1,34 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrollY, setScrollY] = useState(0);
+    const [lastScrollY, setLastScrollY] = useState(0);
+    const [isScrollingDown, setIsScrollingDown] = useState(false);
+
+    // Track scroll position and direction
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            
+            // Check if scrolling down
+            if (currentScrollY > lastScrollY && currentScrollY > 50) {
+                setIsScrollingDown(true);
+            } else {
+                setIsScrollingDown(false);
+            }
+            
+            setLastScrollY(currentScrollY);
+            setScrollY(currentScrollY);
+        };
+        
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScrollY]);
 
     // Variants for parent ul to stagger children
     const listVariants = {
@@ -23,7 +46,6 @@ function Header() {
         <header className="w-full z-50 bg-transparent absolute left-0 -top-23">
             <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-15 lg:py-6">
 
-
                 {/* Logo */}
                 <div className="flex-shrink-0">
                     <img
@@ -32,10 +54,6 @@ function Header() {
                         className="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px] h-auto "
                     />
                 </div>
-
-
-
-
 
                 <div className="relative">
                     {/* Hamburger button */}
@@ -64,19 +82,19 @@ function Header() {
                                 <motion.div
                                     key="menu"
                                     initial={{ x: "100%" }}
-                                    animate={{ x: 0 }}
+                                    animate={{ 
+                                        x: isScrollingDown ? "100%" : 0,
+                                        opacity: isScrollingDown ? 0 : 1
+                                    }}
                                     exit={{ x: "100%" }}
-                                    transition={{ duration: 0.28, ease: "easeInOut" }}
-                                    className="
-  absolute top-full 
-  right-2 sm:right-4 md:right-8 lg:right-0
-  z-40 
-  w-56 sm:w-60 md:w-72 lg:w-80 
-  bg-black/70 text-white 
-  backdrop-blur-md rounded-3xl 
-  p-4 sm:p-5 md:p-6 lg:p-8 mt-2
-"
-
+                                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                                    className="fixed right-0
+                                               z-40  
+                                               w-56 sm:w-50 md:w-72 lg:w-80 
+                                               bg-black/70 text-white 
+                                               backdrop-blur-md rounded-l-3xl 
+                                               p-4 sm:p-5 md:p-6 lg:p-8"
+                                    style={{ top: `${scrollY + 120}px` }}
                                 >
                                     <motion.ul
                                         variants={listVariants}
@@ -108,11 +126,6 @@ function Header() {
                         )}
                     </AnimatePresence>
                 </div>
-
-
-
-
-
             </div>
         </header>
     )
