@@ -71,83 +71,86 @@ function Servicespage() {
     <>
       {/* Hero Section */}
       <div
-  className="relative w-full h-[400px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
-  style={{
-    backgroundImage: "url('/Assets/pexels-polina-kovaleva-5827854.jpg')",
-    backgroundPosition: "center bottom -50px",
-  }}
->
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/40"></div>
+        className="relative w-full h-[400px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
+        style={{
+          backgroundImage: "url('/Assets/pexels-polina-kovaleva-5827854.jpg')",
+          backgroundPosition: "center bottom -50px",
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
-  {/* Content */}
-  <div className="relative mt-15 z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6">
-    <motion.h1
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 120, damping: 12 }}
-      className="text-white font-bold 
+        {/* Content */}
+        <div className="relative mt-15 z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6">
+          <motion.h1
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 120, damping: 12 }}
+            className="text-white font-bold 
                  text-3xl sm:text-4xl md:text-5xl lg:text-[55px] 
                  font-['Open_Sans'] leading-snug"
-    >
-      Services
-    </motion.h1>
+          >
+            Services
+          </motion.h1>
 
-    <motion.p
-      initial={{ y: 50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.3, duration: 0.8 }}
-      className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl 
+          <motion.p
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl 
                  text-gray-200 max-w-xl sm:max-w-2xl md:max-w-3xl 
                   leading-relaxed sm:leading-[28px] md:leading-[30px] 
                  tracking-[1px] sm:tracking-[1.2px] md:tracking-[1.5px]"
-    >
-      Traits Global solutions Providing software and application development,
-      web designing, hosting and IT support Services. We are one of the trusted
-      business advisors, assuring peace of mind through cultivated expertise,
-      extensive resources, and uncompromising services.
-    </motion.p>
-  </div>
-</div>
+          >
+            Traits Global solutions Providing software and application development,
+            web designing, hosting and IT support Services. We are one of the trusted
+            business advisors, assuring peace of mind through cultivated expertise,
+            extensive resources, and uncompromising services.
+          </motion.p>
+        </div>
+      </div>
 
 
       {/* Services Section */}
       <section className="bg-white py-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
-          <h2 className="" style={{ fontSize: "25px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif", color: "#333", textAlign: "center"  , marginBottom:'50px'}}>
+          <h2 className="" style={{ fontSize: "25px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif", color: "#333", textAlign: "center", marginBottom: '50px' }}>
             WHAT <span className="text-yellow-500">WE OFFER</span>
             <div className="mt-2 w-20 h-[2px] bg-gray-300 mx-auto"></div>
           </h2>
-          
 
-          
-          <div className="flex justify-center mb-20">
-            <div className="relative flex bg-gray-100 rounded-full p-2 gap-2">
-              {services.map((service) => {
-                const isActive = active === service.id;
-                return (
-                  <button
-                    key={service.id}
-                    onClick={() => setActive(service.id)}
-                    className={`relative flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-colors duration-300
-                      ${isActive ? "text-black" : "text-gray-700 hover:text-yellow-500"}`}
-                  >
-                    {/* Sliding background */}
-                    {isActive && (
-                      <motion.div
-                        layoutId="active-pill"
-                        className="absolute inset-0 bg-white rounded-full shadow-md"
-                        transition={{ type: "spring", stiffness: 500, damping: 40 }}
-                      />
-                    )}
-                    <span className="relative z-10 text-yellow-500">{service.icon}</span>
-                    <span className="relative z-10">{service.title}</span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
+
+<div className="flex justify-center mb-10 sm:mb-16 md:mb-20 px-2 sm:px-4">
+  <div className="relative flex flex-wrap sm:flex-nowrap bg-gray-100 rounded-full p-1 sm:p-2 gap-2 sm:gap-3">
+    {services.map((service) => {
+      const isActive = active === service.id;
+      return (
+        <button
+          key={service.id}
+          onClick={() => setActive(service.id)}
+          className={`relative flex items-center gap-1 sm:gap-2 
+            px-3 py-2 sm:px-5 sm:py-3 
+            text-sm sm:text-base md:text-lg
+            rounded-full font-medium transition-colors duration-300
+            ${isActive ? "text-black" : "text-gray-700 hover:text-yellow-500"}`}
+        >
+          {/* Sliding background */}
+          {isActive && (
+            <motion.div
+              layoutId="active-pill"
+              className="absolute inset-0 bg-white rounded-full shadow-md"
+              transition={{ type: "spring", stiffness: 500, damping: 40 }}
+            />
+          )}
+          <span className="relative z-10 text-yellow-500 text-lg sm:text-xl">{service.icon}</span>
+          <span className="relative z-10">{service.title}</span>
+        </button>
+      );
+    })}
+  </div>
+</div>
+
 
           {/* Content */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -195,7 +198,7 @@ function Servicespage() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             why choose <span className="text-[#FFAA01]">our</span> services
           </h2>
-            
+
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
           {[{ title: "OUR APPROACH", items: Approach }, { title: "Our DifferenceSION OUR DIFFERENCE", items: Difference }].map((section, idx) => (

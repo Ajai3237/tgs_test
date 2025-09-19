@@ -198,22 +198,22 @@ function Homepage() {
     <>
       {/* Home */}
 
-     <div className="relative w-screen h-screen overflow-hidden">
-  {/* Background Video */}
-  <video
-    src="/Assets/tgs_video.mp4"
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-  />
+      <div className="relative w-screen h-screen overflow-hidden">
+        {/* Background Video */}
+        <video
+          src="/Assets/tgs_video.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        />
 
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/50"></div>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
 
-  {/* Left Arrow */}
-  {/* <motion.button
+        {/* Left Arrow */}
+        {/* <motion.button
     onClick={prevSlide}
     whileHover={{ x: -5 }}
     transition={{ type: "spring", stiffness: 300 }}
@@ -222,8 +222,8 @@ function Homepage() {
     <ChevronLeft size={24} className="sm:w-7 sm:h-7" />
   </motion.button> */}
 
-  {/* Right Arrow */}
-  {/* <motion.button
+        {/* Right Arrow */}
+        {/* <motion.button
     onClick={nextSlide}
     whileHover={{ x: 5 }}
     transition={{ type: "spring", stiffness: 300 }}
@@ -232,49 +232,49 @@ function Homepage() {
     <ChevronRight size={24} className="sm:w-7 sm:h-7" />
   </motion.button> */}
 
-  {/* Centered text */}
-  <div className="relative flex flex-col items-center justify-center h-full text-center px-4">
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={index}
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -30 }}
-        transition={{ duration: 0.8 }}
-      >
-        {/* Main Heading */}
-        <h1
-          className="font-bold text-white  drop-shadow-md mt-20 sm:mt-28 
+        {/* Centered text */}
+        <div className="relative flex flex-col items-center justify-center h-full text-center px-4">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -30 }}
+              transition={{ duration: 0.8 }}
+            >
+              {/* Main Heading */}
+              <h1
+                className="font-bold text-white  drop-shadow-md mt-20 sm:mt-28 
                      text-3xl sm:text-4xl md:text-5xl lg:text-[55px]"
-        >
-          <span className="text-white">{current.title1}</span>{" "}
-          <span className="text-[#FFAA01]">{current.title2}</span>
-        </h1>
+              >
+                <span className="text-white">{current.title1}</span>{" "}
+                <span className="text-[#FFAA01]">{current.title2}</span>
+              </h1>
 
-        {/* Subtitle */}
-        <p
-          className="mt-4 text-gray-300 text-sm sm:text-base md:text-lg 
+              {/* Subtitle */}
+              <p
+                className="mt-4 text-gray-300 text-sm sm:text-base md:text-lg 
                      max-w-md sm:max-w-xl md:max-w-2xl mx-auto  leading-relaxed"
-        >
-          {current.subtitle1}
-        </p>
+              >
+                {current.subtitle1}
+              </p>
 
-        {/* Button */}
-        <div className="mt-8">
-          <motion.a
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="inline-block bg-[#FFAA01]/80 text-white px-6 py-2 
+              {/* Button */}
+              <div className="mt-8">
+                <motion.a
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                  className="inline-block bg-[#FFAA01]/80 text-white px-6 py-2 
                        rounded-full font-bold cursor-pointer shadow-md hover:bg-[#ffaa01]"
-          >
-            LEARN MORE
-          </motion.a>
+                >
+                  LEARN MORE
+                </motion.a>
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
-      </motion.div>
-    </AnimatePresence>
-  </div>
-</div>
+      </div>
 
 
       {/* -----------------------------------------Home About------------------------------------------------------------------------- */}
@@ -545,6 +545,7 @@ function Homepage() {
         </div>
       </div>
 
+
       {/* -------------------------------------------Home client------------------------------------------------------------------- */}
 
       <div style={{ padding: "60px 20px", backgroundColor: "#EAEAEA" }}>
@@ -743,6 +744,10 @@ function Homepage() {
           </div>
         </div>
       </div>
+
+
+
+      {/* web Apppication */}
 
       <div style={{ padding: "60px 20px", backgroundColor: "#f9f9f9" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
