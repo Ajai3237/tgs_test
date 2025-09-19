@@ -172,7 +172,7 @@ function Careerpage() {
                         <h2 className="text-3xl md:text-4xl font-bold leading-snug">
                             <span className="text-yellow-400">BUILD YOUR</span> CAREER WITH US
                         </h2>
-                        <p className="mt-4 text-lg md:text-xl font-medium">
+                        <p className="mt-4 text-lg md:text-xl font-medium lowercase">
                             BE PART OF A PASSIONATE TEAM SHAPING THE FUTURE OF THE WEB. AT TGS, WE DON’T JUST BUILD WEBSITES WE CREATE DIGITAL EXPERIENCES THAT MAKE AN IMPACT.
                         </p>
 
@@ -182,7 +182,7 @@ function Careerpage() {
 
                     <div className="relative flex-1 hidden lg:flex justify-center">
 
-                        <p className="mt-4 text-sm md:text-base text-gray-300 max-w-md mx-auto lg:mx-0">
+                        <p className="mt-4 text-sm md:text-base text-gray-300 max-w-md mx-auto lg:mx-0 lowercase">
                             LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA.
                         </p>
 
@@ -195,14 +195,14 @@ function Careerpage() {
                     {[
                         { title: "GROWTH OPPORTUNITIES", desc: "WORK ON CHALLENGING PROJECTS THAT HELP YOU LEARN, GROW, AND ADVANCE IN YOUR CAREER." },
                         { title: "CREATIVE ENVIRONMENT", desc: "WORK ON CHALLENGING PROJECTS THAT HELP YOU LEARN, GROW, AND ADVANCE IN YOUR CAREER." },
-                        { title: "WORK-LIFE BALANCE", desc: "WORK ON CHALLENGING PROJECTS THAT HELP YOU LEARN, GROW, AND ADVANCE IN YOUR CAREER." },
+                        { title: "WORK LIFE BALANCE", desc: "WORK ON CHALLENGING PROJECTS THAT HELP YOU LEARN, GROW, AND ADVANCE IN YOUR CAREER." },
                     ].map((card, i) => (
                         <div
                             key={i}
                             className="border border-yellow-400 rounded-4xl p-6 text-center hover:bg-yellow-400/10 transition"
                         >
-                            <h3 className="text-lg font-bold mb-2">{card.title}</h3>
-                            <p className="text-sm text-gray-300 leading-relaxed">{card.desc}</p>
+                            <h3 className="text-lg font-bold mb-2 lo">{card.title}</h3>
+                            <p className="text-sm text-gray-300 leading-relaxed lowercase">{card.desc}</p>
                         </div>
                     ))}
                 </div>

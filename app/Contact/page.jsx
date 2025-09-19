@@ -9,42 +9,42 @@ function Contactpage() {
   return (
     <>
       {/*  Section */}
-     <div
-  className="relative w-full h-[550px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
-  style={{
-    backgroundImage: "url('/Assets/4218ffd77125517d2f2600745397424e.jpg')",
-  }}
->
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/40"></div>
+      <div
+        className="relative w-full h-[550px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
+        style={{
+          backgroundImage: "url('/Assets/4218ffd77125517d2f2600745397424e.jpg')",
+        }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
-  {/* Content */}
-  <div className="relative mt-10  z-10 flex flex-col items-center justify-center h-full text-center px-4">
-    <motion.h1
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 120, damping: 12 }}
-      className="text-white font-bold 
+        {/* Content */}
+        <div className="relative mt-10  z-10 flex flex-col items-center justify-center h-full text-center px-4">
+          <motion.h1
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 120, damping: 12 }}
+            className="text-white font-bold 
                  text-3xl sm:text-4xl md:text-5xl lg:text-[55px] 
                  font-['Open_Sans'] leading-snug"
-    >
-      Contact <span className="text-[#FFAA01]">Us</span>
-    </motion.h1>
+          >
+            Contact <span className="text-[#FFAA01]">Us</span>
+          </motion.h1>
 
-    <motion.p
-      initial={{ y: 50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.3, duration: 0.8 }}
-      className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl 
+          <motion.p
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl 
                  text-gray-200 max-w-xl sm:max-w-2xl md:max-w-3xl 
                  font-['Roboto'] leading-relaxed sm:leading-[28px] md:leading-[30px] 
                  tracking-[1px] sm:tracking-[1.2px] md:tracking-[1.5px]"
-    >
-      As a matter of fact the unification of the coherent software provides a strict control
-      over The Accomplishment of Intended Estimation
-    </motion.p>
-  </div>
-</div>
+          >
+            As a matter of fact the unification of the coherent software provides a strict control
+            over The Accomplishment of Intended Estimation
+          </motion.p>
+        </div>
+      </div>
 
 
 
@@ -53,7 +53,7 @@ function Contactpage() {
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
           {/* Heading */}
           <div className="text-center mb-12">
-            <h2 className="" style={{ fontSize: "25px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif", color: "#333", textAlign: "center"  }}>
+            <h2 className="" style={{ fontSize: "25px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif", color: "#333", textAlign: "center" }}>
               CONTACT US <span className="text-yellow-500">FOR ANY</span> ENQUIRIES
             </h2>
             <div className="mt-2 w-20 h-[2px] bg-gray-300 mx-auto"></div>
@@ -184,28 +184,28 @@ function Contactpage() {
       {/* map */}
 
       <section className="relative w-full h-[400px] sm:h-[500px] md:h-[700px] p-10 pb-20 pt-20">
-  {/* Google Maps Embed */}
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1956.5924918481962!2d75.83276443851479!3d11.247798597232785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c73aa37711c2009%3A0xa7bfd72913c8a998!2sTraits%20Global%20Solutions%20(TGS)!5e0!3m2!1sen!2sus!4v1758101657878!5m2!1sen!2sus"
-    width="100%"
-    height="100%"
-    style={{ border: 0 }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
+        {/* Google Maps Embed */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1956.5924918481962!2d75.83276443851479!3d11.247798597232785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c73aa37711c2009%3A0xa7bfd72913c8a998!2sTraits%20Global%20Solutions%20(TGS)!5e0!3m2!1sen!2sus!4v1758101657878!5m2!1sen!2sus"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
 
-  {/* Overlay (clickable area) */}
-  <a
-    href="https://www.google.com/maps/place/Oxford+St/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="absolute inset-0"
-  ></a>
-</section>
+        {/* Overlay (clickable area) */}
+        <a
+          href="https://www.google.com/maps/place/Oxford+St/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0"
+        ></a>
+      </section>
 
 
-    
+
 
     </>
   )

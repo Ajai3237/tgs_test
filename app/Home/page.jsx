@@ -212,25 +212,7 @@ function Homepage() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
 
-        {/* Left Arrow */}
-        {/* <motion.button
-    onClick={prevSlide}
-    whileHover={{ x: -5 }}
-    transition={{ type: "spring", stiffness: 300 }}
-    className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 z-10 bg-black/40 rounded-full p-2 sm:p-3 text-white cursor-pointer"
-  >
-    <ChevronLeft size={24} className="sm:w-7 sm:h-7" />
-  </motion.button> */}
-
-        {/* Right Arrow */}
-        {/* <motion.button
-    onClick={nextSlide}
-    whileHover={{ x: 5 }}
-    transition={{ type: "spring", stiffness: 300 }}
-    className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 z-10 bg-black/40 rounded-full p-2 sm:p-3 text-white cursor-pointer"
-  >
-    <ChevronRight size={24} className="sm:w-7 sm:h-7" />
-  </motion.button> */}
+        
 
         {/* Centered text */}
         <div className="relative flex flex-col items-center justify-center h-full text-center px-4">
@@ -365,7 +347,7 @@ function Homepage() {
           <div className="flex flex-col lg:flex-row gap-6 mt-10">
             {/* Left Content */}
             <div className="flex-1 p-3 rounded-lg">
-              <p className="text-[13px] leading-7 font-roboto text-[#313131] tracking-wider uppercase">
+              <p className="text-[14px] leading-7 font-roboto text-[#313131] tracking-wider ">
                 TGS has the unique expertise in mobile development for multiple technologies to create powerful native and mobile web apps for popular mobile platforms including Android, iPhone, iPad and Windows Mobile Phone. Our expertise includes designing and building of real-time apps, mobile web utility products
                 that go well together with your business needs allowing instant messaging, e-mailing and mobile accessibility to vital business operational areas. Sometimes different applications need to work in unison with the business flow to meet compliance or data needs. We develop middleware to enable integration of systems and applications across the enterprise apart from facilitating flexible customized applications and business process integration (BPI) solutions to synchronize your databases to avoid data inefficiencies, multiple occurrences of same process or less straightforward business processes resulting in higher costs.
               </p>
@@ -466,13 +448,13 @@ function Homepage() {
             <span style={{ color: "#FFAA01" }}> WE</span>  DO
           </h2>
           <p style={{
-            fontSize: "13px",
+            fontSize: "14px",
             fontFamily: "'Roboto', sans-serif",
             color: "#313131",
             textAlign: "center",
             marginTop: '40px',
             letterSpacing: "1px",
-            textTransform: "uppercase",
+            
             lineHeight: "1.8",
           }}>
             Traits Global solutions Providing software and application development, web designing, hosting and IT support Services. We are one of the trusted business advisors, assuring peace of mind through cultivated expertise, extensive resources, and uncompromising services.
@@ -635,13 +617,13 @@ function Homepage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto", marginTop: '40px', backgroundColor: 'EAEAEA' }}>
 
           <p style={{
-            fontSize: "13px",
+            fontSize: "14px",
             fontFamily: "'Roboto', sans-serif",
             color: "#313131",
             textAlign: "center",
             marginTop: '40px',
             letterSpacing: "1px",
-            textTransform: "uppercase",
+            
             lineHeight: "1.8",
           }}>
             A true partnership is a two-way street — ideas and information flow openly and regularly, based on a foundation of mutual trust and respect for one another’s expertise —
@@ -683,12 +665,12 @@ function Homepage() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
               }}
               style={{
-                fontSize: "13px",
+                fontSize: "14px",
                 fontFamily: "'Roboto', sans-serif",
                 color: "#FFF",
                 textAlign: "center",
                 letterSpacing: "1px",
-                textTransform: "uppercase",
+               
                 lineHeight: "1.8",
                 paddingBottom: "60px",
               }}
@@ -758,7 +740,7 @@ function Homepage() {
           <div className="flex flex-col lg:flex-row gap-9 mt-10">
             {/* Left Content */}
             <div className="flex-1 p-3 rounded-lg">
-              <p className="text-[13px] leading-7 font-roboto text-[#313131] tracking-wider uppercase">
+              <p className="text-[14px] leading-7 font-roboto text-[#313131] tracking-wider ">
                 TGS has the unique expertise in mobile development for multiple technologies to create powerful native and mobile web apps for popular mobile platforms including Android, iPhone, iPad and Windows Mobile Phone. Our expertise includes designing and building of real-time apps, mobile web utility products
                 that go well together with your business needs allowing instant messaging, e-mailing and mobile accessibility to vital business operational areas. Sometimes different applications need to work in unison with the business flow to meet compliance or data needs. We develop middleware to enable integration of systems and applications across the enterprise apart from facilitating flexible customized applications and business process integration (BPI) solutions to synchronize your databases to avoid data inefficiencies, multiple occurrences of same process or less straightforward business processes resulting in higher costs.
               </p>
@@ -833,7 +815,7 @@ function Homepage() {
 
           <p
             style={{
-              fontSize: "13px", fontFamily: "'Roboto', sans-serif", color: "#FFFF", letterSpacing: "1px", textTransform: "uppercase", lineHeight: "1.8",
+              fontSize: "14px", fontFamily: "'Roboto', sans-serif", color: "#FFFF", letterSpacing: "1px",  lineHeight: "1.8",
               margin: 0,
             }}>
             As a matter of fact the unification of the coherent software provides a strict control over the accomplishment of intended estimation

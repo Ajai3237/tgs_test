@@ -37,71 +37,78 @@ function Header() {
 
 
 
-                <div className="relative">
-                    {/* Hamburger button */}
-                    <button
-                        onClick={() => setIsOpen(!isOpen)}
-                        className="text-white z-50 relative p-2 transition-transform duration-200 hover:scale-110"
-                    >
-                        {isOpen ? <X size={36} /> : <Menu size={36} />}
-                    </button>
+               <div className="relative">
+  {/* Hamburger button */}
+  <button
+    onClick={() => setIsOpen(!isOpen)}
+    className="text-white z-50 relative p-2 transition-transform duration-200 hover:scale-110"
+  >
+    {isOpen ? <X size={36} /> : <Menu size={36} />}
+  </button>
 
-                    <AnimatePresence>
-                        {isOpen && (
-                            <>
-                                {/* Optional full-screen backdrop (click to close) */}
-                                <motion.div
-                                    key="backdrop"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    exit={{ opacity: 0 }}
-                                    transition={{ duration: 0.18 }}
-                                    className="fixed inset-0 z-30"
-                                    onClick={() => setIsOpen(false)}
-                                />
+  <AnimatePresence>
+    {isOpen && (
+      <>
+        {/* Full-screen backdrop (click to close) */}
+        <motion.div
+          key="backdrop"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.18 }}
+          className="fixed inset-0 z-30 bg-black/40"
+          onClick={() => setIsOpen(false)}
+        />
 
-                                {/* Menu sliding in from the right, fixed so it hugs the viewport edge */}
-                                <motion.div
-                                    key="menu"
-                                    initial={{ x: "100%" }}
-                                    animate={{ x: 0 }}
-                                    exit={{ x: "100%" }}
-                                    transition={{ duration: 0.28, ease: "easeInOut" }}
-                                    style={{ borderRadius: '40px' }}
-                                    className={`
-                                                fixed top-30 right-0 z-40 h-80  
-                                                w-64 max-w-[85vw  bg-black/60 text-white flex items-center justify-center backdrop-blur-sm p-6
-                                                   `}
-                                >
-                                    {/* The menu content (ul) remains the same */}
-                                    <motion.ul
-                                        variants={listVariants}
-                                        initial="closed"
-                                        animate="open"
-                                        exit="closed"
-                                        className="flex flex-col space-y-6 text-center text-lg md:text-xl font-medium"
-                                    >
-                                        <motion.li variants={itemVariants} className="cursor-pointer hover:text-yellow-400">
-                                            <Link href="/">Home</Link>
-                                        </motion.li>
-                                        <motion.li variants={itemVariants} className="cursor-pointer hover:text-yellow-400">
-                                            <Link href="/About">About</Link>
-                                        </motion.li>
-                                        <motion.li variants={itemVariants} className="cursor-pointer hover:text-yellow-400">
-                                            <Link href="/Services">Services</Link>
-                                        </motion.li>
-                                        <motion.li variants={itemVariants} className="cursor-pointer hover:text-yellow-400">
-                                            <Link href="/Career">Career</Link>
-                                        </motion.li>
-                                        <motion.li variants={itemVariants} className="cursor-pointer hover:text-yellow-400">
-                                            <Link href="/Contact">Contact Us</Link>
-                                        </motion.li>
-                                    </motion.ul>
-                                </motion.div>
-                            </>
-                        )}
-                    </AnimatePresence>
-                </div>
+        {/* Sliding menu */}
+        <motion.div
+          key="menu"
+          initial={{ x: "100%" }}
+          animate={{ x: 0 }}
+          exit={{ x: "100%" }}
+          transition={{ duration: 0.28, ease: "easeInOut" }}
+         className="
+  absolute top-full 
+  right-2 sm:left md:left lg:left-0 
+  z-40 
+  w-56 sm:w-60 md:w-72 lg:w-48 
+  bg-black/70 text-white 
+  backdrop-blur-md rounded-3xl 
+  p-4 sm:p-5 md:p-6 lg:p-8 mt-2
+"
+
+        >
+          <motion.ul
+            variants={listVariants}
+            initial="closed"
+            animate="open"
+            exit="closed"
+            className="flex flex-col space-y-6 text-center text-lg md:text-xl font-medium"
+          >
+            {[
+              { href: "/", label: "Home" },
+              { href: "/About", label: "About" },
+              { href: "/Services", label: "Services" },
+              { href: "/Career", label: "Career" },
+              { href: "/Contact", label: "Contact Us" },
+            ].map((item, i) => (
+              <motion.li
+                key={i}
+                variants={itemVariants}
+                className="cursor-pointer hover:text-yellow-400"
+              >
+                <Link href={item.href} onClick={() => setIsOpen(false)}>
+                  {item.label}
+                </Link>
+              </motion.li>
+            ))}
+          </motion.ul>
+        </motion.div>
+      </>
+    )}
+  </AnimatePresence>
+</div>
+
 
 
 
