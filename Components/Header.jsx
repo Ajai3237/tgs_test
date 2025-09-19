@@ -37,77 +37,74 @@ function Header() {
 
 
 
-               <div className="relative">
-  {/* Hamburger button */}
-  <button
-    onClick={() => setIsOpen(!isOpen)}
-    className="text-white z-50 relative p-2 transition-transform duration-200 hover:scale-110"
-  >
-    {isOpen ? <X size={36} /> : <Menu size={36} />}
-  </button>
+                <div className="relative">
+                    {/* Hamburger button */}
+                    <button
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="text-white z-50 relative p-2 transition-transform duration-200 hover:scale-110"
+                    >
+                        {isOpen ? <X size={36} /> : <Menu size={36} />}
+                    </button>
 
-  <AnimatePresence>
-    {isOpen && (
-      <>
-        {/* Full-screen backdrop (click to close) */}
-        <motion.div
-          key="backdrop"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.18 }}
-          className="fixed inset-0 z-30 bg-black/40"
-          onClick={() => setIsOpen(false)}
-        />
+                    <AnimatePresence>
+                        {isOpen && (
+                            <>
+                                {/* Full-screen backdrop (click to close) */}
+                                <motion.div
+                                    key="backdrop"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.18 }}
+                                    className="fixed inset-0 z-30 bg-black/40"
+                                    onClick={() => setIsOpen(false)}
+                                />
 
-        {/* Sliding menu */}
-        <motion.div
-          key="menu"
-          initial={{ x: "100%" }}
-          animate={{ x: 0 }}
-          exit={{ x: "100%" }}
-          transition={{ duration: 0.28, ease: "easeInOut" }}
-         className="
-  absolute top-full 
-  right-2 sm:left md:left lg:left-0 
-  z-40 
-  w-56 sm:w-60 md:w-72 lg:w-48 
-  bg-black/70 text-white 
-  backdrop-blur-md rounded-3xl 
-  p-4 sm:p-5 md:p-6 lg:p-8 mt-2
-"
+                                {/* Sliding menu */}
+                                <motion.div
+                                    key="menu"
+                                    initial={{ x: "100%" }}
+                                    animate={{ x: 0 }}
+                                    exit={{ x: "100%" }}
+                                    transition={{ duration: 0.28, ease: "easeInOut" }}
+                                    className="absolute top-full z-40 bg-black/70 text-white backdrop-blur-md rounded-3xl mt-2"
+                                    style={{
+                                        right: "8px",  
+                                        width: "14rem",
+                                        padding: "1rem" 
+                                    }}
 
-        >
-          <motion.ul
-            variants={listVariants}
-            initial="closed"
-            animate="open"
-            exit="closed"
-            className="flex flex-col space-y-6 text-center text-lg md:text-xl font-medium"
-          >
-            {[
-              { href: "/", label: "Home" },
-              { href: "/About", label: "About" },
-              { href: "/Services", label: "Services" },
-              { href: "/Career", label: "Career" },
-              { href: "/Contact", label: "Contact Us" },
-            ].map((item, i) => (
-              <motion.li
-                key={i}
-                variants={itemVariants}
-                className="cursor-pointer hover:text-yellow-400"
-              >
-                <Link href={item.href} onClick={() => setIsOpen(false)}>
-                  {item.label}
-                </Link>
-              </motion.li>
-            ))}
-          </motion.ul>
-        </motion.div>
-      </>
-    )}
-  </AnimatePresence>
-</div>
+                                >
+                                    <motion.ul
+                                        variants={listVariants}
+                                        initial="closed"
+                                        animate="open"
+                                        exit="closed"
+                                        className="flex flex-col space-y-6 text-center text-lg md:text-xl font-medium"
+                                    >
+                                        {[
+                                            { href: "/", label: "Home" },
+                                            { href: "/About", label: "About" },
+                                            { href: "/Services", label: "Services" },
+                                            { href: "/Career", label: "Career" },
+                                            { href: "/Contact", label: "Contact Us" },
+                                        ].map((item, i) => (
+                                            <motion.li
+                                                key={i}
+                                                variants={itemVariants}
+                                                className="cursor-pointer hover:text-yellow-400"
+                                            >
+                                                <Link href={item.href} onClick={() => setIsOpen(false)}>
+                                                    {item.label}
+                                                </Link>
+                                            </motion.li>
+                                        ))}
+                                    </motion.ul>
+                                </motion.div>
+                            </>
+                        )}
+                    </AnimatePresence>
+                </div>
 
 
 
