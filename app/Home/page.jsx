@@ -340,7 +340,7 @@ function Homepage() {
       {/* Service */}
       <div style={{ padding: "60px 20px", backgroundColor: "#f9f9f9" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "34px", fontWeight: "600", fontFamily: "'Roboto', sans-serif", color: "#333", letterSpacing: '2px' }}>
+          <h2 style={{ fontSize: "30px", fontWeight: "600",  color: "#333", letterSpacing: '2px' }}>
             "Mobility Services & <br /> Application Integration"
           </h2>
 
@@ -363,7 +363,7 @@ function Homepage() {
                   <input type="checkbox" id="bar1" hidden />
                   <label htmlFor="bar1" className="accordion-label">
                     <span style={{ color: '#FFAA01', fontSize: '23px' }} className="num">01</span>
-                    <span style={{ fontFamily: "'Open Sans', sans-serif", fontSize: '20px' }} className="title">ASP.NET</span>
+                    <span style={{  fontSize: '20px' }} className="title">ASP.NET</span>
                     <i className="fa-solid fa-angle-down arrow"></i>
                   </label>
                   <div className="content">
@@ -377,7 +377,7 @@ function Homepage() {
                   <input type="checkbox" id="bar2" hidden />
                   <label htmlFor="bar2" className="accordion-label">
                     <span style={{ color: '#FFAA01', fontSize: '23px' }} className="num">02</span>
-                    <span style={{ fontFamily: "'Open Sans', sans-serif", fontSize: '20px' }} className="title">Android</span>
+                    <span style={{  fontSize: '20px' }} className="title">Android</span>
                     <i className="fa-solid fa-angle-down arrow"></i>
                   </label>
                   <div className="content">
@@ -391,7 +391,7 @@ function Homepage() {
                   <input type="checkbox" id="bar3" hidden />
                   <label htmlFor="bar3" className="accordion-label">
                     <span style={{ color: '#FFAA01', fontSize: '23px' }} className="num">03</span>
-                    <span style={{ fontFamily: "'Open Sans', sans-serif", fontSize: '20px' }} className="title">Java</span>
+                    <span style={{  fontSize: '20px' }} className="title">Java</span>
                     <i className="fa-solid fa-angle-down arrow"></i>
                   </label>
                   <div className="content">
@@ -530,7 +530,7 @@ function Homepage() {
 
       <div style={{ padding: "60px 20px", backgroundColor: "#EAEAEA" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", marginTop: '5px' }}>
-          <h2 style={{ fontSize: "25px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif", color: "#333", textAlign: "center" }}>
+          <h2 style={{ fontSize: "25px", fontWeight: "bold",  color: "#333", textAlign: "center" }}>
             MEET
             <span style={{ color: "#FFAA01" }}> OUR</span>  CLIENTS
           </h2>
@@ -619,7 +619,7 @@ function Homepage() {
 
           <p style={{
             fontSize: "14px",
-            fontFamily: "'Roboto', sans-serif",
+           
             color: "#313131",
             textAlign: "center",
             marginTop: '40px',
@@ -649,7 +649,7 @@ function Homepage() {
               style={{
                 fontSize: "29px",
                 fontWeight: "bold",
-                fontFamily: "'Roboto', sans-serif",
+               
                 color: "#FFF",
                 textAlign: "center",
                 marginBottom: "30px",
@@ -667,7 +667,7 @@ function Homepage() {
               }}
               style={{
                 fontSize: "14px",
-                fontFamily: "'Roboto', sans-serif",
+                
                 color: "#FFF",
                 textAlign: "center",
                 letterSpacing: "1px",
@@ -809,14 +809,14 @@ function Homepage() {
             padding: "60px 20px",
           }} >
           <h2
-            style={{ fontSize: "25px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif", color: "#FFFF", marginBottom: "20px", }} >
+            style={{ fontSize: "25px", fontWeight: "bold",  color: "#FFFF", marginBottom: "20px", }} >
             CONTACT US
             <span style={{ color: "#FFAA01" }}> FOR ANY</span> ENQUIRIES
           </h2>
 
           <p
             style={{
-              fontSize: "14px", fontFamily: "'Roboto', sans-serif", color: "#FFFF", letterSpacing: "1px", lineHeight: "1.8",
+              fontSize: "14px",  color: "#FFFF", letterSpacing: "1px", lineHeight: "1.8",
               margin: 0,
             }}>
             As a matter of fact the unification of the coherent software provides a strict control over the accomplishment of intended estimation
