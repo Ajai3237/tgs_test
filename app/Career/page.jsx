@@ -46,7 +46,7 @@ function Careerpage() {
                         transition={{ type: "spring", stiffness: 120, damping: 12 }}
                         className="text-white font-bold 
                  text-2xl sm:text-2xl md:text-5xl lg:text-[55px] 
-                 font-['Roboto']leading-snug"
+                 leading-snug"
                     >
                         Build Your <span className="text-[#FFAA01]">Career</span> With Us
                     </motion.h1>
@@ -69,7 +69,7 @@ function Careerpage() {
             </div>
 
 
-            <div className="min-h-screen bg-white flex flex-col items-center px-4 py-12 font-['Roboto'] ">
+            <div className="min-h-screen bg-white flex flex-col items-center px-4 py-12 ">
                 {/* Heading Section */}
                 <div className="text-center max-w-2xl mb-10">
                     <h2 className="" style={{ fontSize: "25px", fontWeight: "bold", color: "#333", textAlign: "center", marginBottom: '50px' }}>

@@ -160,40 +160,41 @@ function Servicespage() {
 
 
           {/* Content */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            {/* Text */}
-            <div>
-              <h3 className="text-2xl font-semibold mb-4">
-                {activeService.title}
-              </h3>
-              <p className="text-gray-600 mb-6">{activeService.description}</p>
-              <ul className="space-y-3">
-                {activeService.points.map((point, index) => (
-                  <li key={index} className="flex items-center gap-2 text-gray-800">
-                    ✅ {point}
-                  </li>
-                ))}
-              </ul>
-            </div>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+  {/* Text */}
+  <div className="flex flex-col justify-start min-h-[400px]">
+    <h3 className="text-2xl font-semibold mb-4">
+      {activeService.title}
+    </h3>
+    <p className="text-gray-600 mb-6">{activeService.description}</p>
+    <ul className="space-y-3">
+      {activeService.points.map((point, index) => (
+        <li key={index} className="flex items-center gap-2 text-gray-800">
+          ✅ {point}
+        </li>
+      ))}
+    </ul>
+  </div>
 
-            {/* Image */}
-            <motion.div
-              key={activeService.id}
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.4 }}
-              className="rounded-2xl overflow-hidden shadow-lg"
-            >
-              <Image
-                src={activeService.image}
-                alt={activeService.title}
-                width={550}
-                height={400}   // ✅ fixed height
-                className="w-[650px] h-[400px] object-cover"
-              />
-            </motion.div>
-          </div>
+  {/* Image */}
+  <motion.div
+    key={activeService.id}
+    initial={{ opacity: 0, x: 50 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0, x: -50 }}
+    transition={{ duration: 0.4 }}
+    className="rounded-2xl overflow-hidden shadow-lg"
+  >
+    <Image
+      src={activeService.image}
+      alt={activeService.title}
+      width={550}
+      height={400}   // ✅ fixed height
+      className="w-[650px] h-[400px] object-cover"
+    />
+  </motion.div>
+</div>
+
         </div>
       </section>
 
@@ -208,7 +209,7 @@ function Servicespage() {
 
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
-          {[{ title: "OUR APPROACH", items: Approach }, { title: "Our DifferenceSION OUR DIFFERENCE", items: Difference }].map((section, idx) => (
+          {[{ title: "OUR APPROACH", items: Approach }, { title: " OUR DIFFERENCE", items: Difference }].map((section, idx) => (
             <motion.div
               key={idx}
               className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
