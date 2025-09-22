@@ -116,7 +116,7 @@ function Aboutpage() {
       {/* Features Section */}
       <section className="min-h-screen bg-gray-50 p-6 flex flex-col items-center justify-center">
 
-        <h2 style={{ fontSize: "25px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif", color: "#333", textAlign: "center", marginBottom: '50px' }}>
+        <h2 style={{ fontSize: "25px", fontWeight: "bold", color: "#333", textAlign: "center", marginBottom: '50px' }}>
           WHO WE ARE
           <span style={{ color: "#FFAA01" }}> AND</span>  WHAT WE STAND FOR
         </h2>
@@ -146,7 +146,7 @@ function Aboutpage() {
                 >
                   <div className="flex items-center gap-4">
                     {feature.icon}
-                    <span className="font-semibold text-gray-700 text-sm md:text-base font-['Roboto']">
+                    <span className="font-semibold text-gray-700 text-sm md:text-base ">
                       {feature.title}
                     </span>
                   </div>
@@ -176,7 +176,7 @@ function Aboutpage() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -15 }}
                 transition={{ duration: 0.5 }}
-                className="text-gray-600 font-['Roboto'] leading-relaxed"
+                className="text-gray-600 leading-relaxed"
               >
                 {selectedFeature.description}
               </motion.p>
