@@ -449,7 +449,7 @@ function Homepage() {
           </h2>
           <p style={{
             fontSize: "14px",
-            fontFamily: "'Roboto', sans-serif",
+            
             color: "#313131",
             textAlign: "center",
             marginTop: '40px',
@@ -472,7 +472,7 @@ function Homepage() {
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: false }}
             >
-              <h3 className="text-lg font-bold text-gray-800 font-roboto pb-1">WEB APPLICATION</h3>
+              <h3 className="text-lg font-bold text-gray-800  pb-1">WEB APPLICATION</h3>
               <p className="text-sm text-gray-600 font-roboto pb-9">
                 We are competent in Web Development of custom designed solutions, Full-Service Web Site development, Web-enabled Databases development and Applications, Web Application development, Business to Consumer Web Sites, E-Business and E-Commerce-enabled Web Sites development, Simple “Static” Sites or Complex Interactive Sites developmen
               </p>
@@ -486,8 +486,8 @@ function Homepage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: false }}
             >
-              <h3 className="text-lg font-bold text-gray-800 font-roboto pb-2">ERP SOLUTION</h3>
-              <p className="text-sm text-gray-600 font-roboto">
+              <h3 className="text-lg font-bold text-gray-800 pb-2">ERP SOLUTION</h3>
+              <p className="text-sm text-gray-600 ">
                 Based on our long-standing experience and niche expertise in ERP solutions development, we can be your strategic partner to develop performance-based products and solutions that really work for you, to help make a significant difference to your bottom line. We assemble pre-built components to enterprise solutions to collaborate customer/supplier Extranets, CRM, and employee intranet requirements or supply chain management solutions having intelligent modules to execute supply chain management globally
               </p>
             </motion.div>
@@ -500,8 +500,8 @@ function Homepage() {
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: false }}
             >
-              <h3 className="text-lg font-bold text-gray-800 font-roboto pb-2">INFRASTRUCTURE</h3>
-              <p className="text-sm text-gray-600 font-roboto pb-9">
+              <h3 className="text-lg font-bold text-gray-800  pb-2">INFRASTRUCTURE</h3>
+              <p className="text-sm text-gray-600 pb-9">
                 Website infrastructure refers to the underlying technology and architecture that supports the functioning of a website. It includes the hardware, software, network and server components that work together to deliver the website's content and provide a smooth user experience.
               </p>
             </motion.div>
@@ -514,8 +514,8 @@ function Homepage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: false }}
             >
-              <h3 className="text-lg font-bold text-gray-800 font-roboto pb-2">OUTSOURCING SERVICES</h3>
-              <p className="text-sm text-gray-600 font-roboto">
+              <h3 className="text-lg font-bold text-gray-800  pb-2">OUTSOURCING SERVICES</h3>
+              <p className="text-sm text-gray-600 ">
                 We provide cost-effective offshore outsourcing support to companies across globe. We gives both onsite and offshore assistance to IT projects of clients in a highly professional manner. Onsite projects involve a dedicated team from TGS to execute / implement the project from/at the client location during the entire project period. Offshore projects involve execution of the project at Traits’s development center in India
               </p>
             </motion.div>
@@ -734,14 +734,14 @@ function Homepage() {
 
       <div style={{ padding: "60px 20px", backgroundColor: "#f9f9f9" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "34px", fontWeight: "600", fontFamily: "'Roboto', sans-serif", color: "#333", letterSpacing: '2px' }}>
+          <h2 style={{ fontSize: "34px", fontWeight: "600", color: "#333", letterSpacing: '2px' }}>
             "Web Applications"
           </h2>
 
           <div className="flex flex-col lg:flex-row gap-9 mt-10">
             {/* Left Content */}
             <div className="flex-1 p-3 rounded-lg">
-              <p className="text-[14px] leading-7 font-roboto text-[#313131] tracking-wider ">
+              <p className="text-[14px] leading-7  text-[#313131] tracking-wider ">
                 TGS has the unique expertise in mobile development for multiple technologies to create powerful native and mobile web apps for popular mobile platforms including Android, iPhone, iPad and Windows Mobile Phone. Our expertise includes designing and building of real-time apps, mobile web utility products
                 that go well together with your business needs allowing instant messaging, e-mailing and mobile accessibility to vital business operational areas. Sometimes different applications need to work in unison with the business flow to meet compliance or data needs. We develop middleware to enable integration of systems and applications across the enterprise apart from facilitating flexible customized applications and business process integration (BPI) solutions to synchronize your databases to avoid data inefficiencies, multiple occurrences of same process or less straightforward business processes resulting in higher costs.
               </p>
@@ -828,14 +828,14 @@ function Homepage() {
               <div className="flex-1 p-3 rounded-lg">
                 <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
                   <h2
-                    style={{ display: "flex", alignItems: "center", gap: "15px", fontFamily: "'Roboto', sans-serif", fontSize: "16px", color: "#FFFF", }}>
+                    style={{ display: "flex", alignItems: "center", gap: "15px", fontSize: "16px", color: "#FFFF", }}>
                     <i className="fa-solid fa-envelope" style={{ color: "#DA9E27" }}></i>
                     info@traitsglobal.com
                   </h2>
 
                   <h2
                     style={{
-                      display: "flex", alignItems: "center", gap: "15px", fontFamily: "'Roboto', sans-serif", fontSize: "16px",
+                      display: "flex", alignItems: "center", gap: "15px",  fontSize: "16px",
                       color: "#FFFF",
                     }} >
                     <i className="fa-solid fa-phone" style={{ color: "#DA9E27" }}></i>
@@ -844,7 +844,7 @@ function Homepage() {
 
                   <h2
                     style={{
-                      display: "flex", alignItems: "center", gap: "15px", fontFamily: "'Roboto', sans-serif", fontSize: "16px",
+                      display: "flex", alignItems: "center", gap: "15px", fontSize: "16px",
                       color: "#FFFF",
                     }} >
                     <i className="fa-solid fa-location-dot" style={{ color: "#DA9E27" }}></i>
