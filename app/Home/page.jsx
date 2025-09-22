@@ -340,7 +340,7 @@ function Homepage() {
       {/* Service */}
       <div style={{ padding: "60px 20px", backgroundColor: "#f9f9f9" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "30px", fontWeight: "600",  color: "#333", letterSpacing: '2px' }}>
+          <h2 style={{ fontSize: "30px", fontWeight: "650",  color: "#333", letterSpacing: '2px' }}>
             "Mobility Services & <br /> Application Integration"
           </h2>
 
