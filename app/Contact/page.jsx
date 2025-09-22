@@ -37,7 +37,7 @@ function Contactpage() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="mt-4 text-sm sm:text-base md:text-lg lg:text-lg 
                  text-gray-200 max-w-xl sm:max-w-2xl md:max-w-3xl 
-                 font-['Roboto'] leading-relaxed sm:leading-[28px] md:leading-[30px] 
+                  leading-relaxed sm:leading-[28px] md:leading-[30px] 
                  tracking-[1px] sm:tracking-[1.2px] md:tracking-[1.5px]"
           >
             As a matter of fact the unification of the coherent software provides a strict control

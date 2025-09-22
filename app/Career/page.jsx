@@ -59,7 +59,7 @@ function Careerpage() {
                  text-sm sm:text-sm md:text-lg lg:text-lg 
                  text-gray-200 max-w-xl sm:max-w-2xl md:max-w-3xl 
                   leading-relaxed sm:leading-[28px] md:leading-[30px] 
-                 tracking-[1px] sm:tracking-[1.2px] md:tracking-[1.5px]"
+                 tracking-[1px] sm:tracking-[1px] md:tracking-[1px]"
                     >
                         Join a passionate team shaping the future of web and software
                         development. At <span className="text-[#FFAA01]">Traits Global</span>,
@@ -76,7 +76,7 @@ function Careerpage() {
                         JOIN <span className="text-[#FFAA01]">OUR</span> TEAM
                         <div className="mt-2 w-20 h-[2px] bg-gray-300 mx-auto"></div>
                     </h2>
-                    <p className="text-gray-500 tracking-widest text-sm md:text-base">
+                    <p className="text-gray-500  text-sm md:text-base">
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod
                         Tempor Incididunt Ut Labore Et Dolore Ma
                     </p>
