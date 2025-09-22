@@ -26,7 +26,7 @@ function Contactpage() {
             transition={{ type: "spring", stiffness: 120, damping: 12 }}
             className="text-white font-bold 
                  text-3xl sm:text-4xl md:text-5xl lg:text-[55px] 
-                 font-['Open_Sans'] leading-snug"
+                 leading-snug"
           >
             Contact <span className="text-[#FFAA01]">Us</span>
           </motion.h1>

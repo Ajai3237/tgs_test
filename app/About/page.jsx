@@ -89,7 +89,7 @@ function Aboutpage() {
       transition={{ type: "spring", stiffness: 120, damping: 12 }}
       className="text-white font-bold 
                  text-3xl sm:text-4xl md:text-5xl lg:text-[55px] 
-                 font-['Open_Sans'] leading-snug"
+                 leading-snug"
     >
       About <span className="text-[#FFAA01]">Us</span>
     </motion.h1>
@@ -189,7 +189,7 @@ function Aboutpage() {
       {/* Vision & Mission */}
       <section className="bg-gray-100 py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 style={{fontSize: "25px",}} className=" md:text-4xl font-bold text-gray-800">
             VISION <span className="text-[#FFAA01]">AND</span> MISSION
           </h2>
         </div>

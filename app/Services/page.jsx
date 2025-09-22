@@ -88,7 +88,7 @@ function Servicespage() {
             transition={{ type: "spring", stiffness: 120, damping: 12 }}
             className="text-white font-bold 
                  text-3xl sm:text-4xl md:text-5xl lg:text-[55px] 
-                 font-['Open_Sans'] leading-snug"
+                  leading-snug"
           >
             Services
           </motion.h1>
@@ -115,7 +115,7 @@ function Servicespage() {
       <section className="bg-white py-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
-          <h2 className="" style={{ fontSize: "25px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif", color: "#333", textAlign: "center", marginBottom: '50px' }}>
+          <h2 className="" style={{ fontSize: "25px", fontWeight: "bold",  color: "#333", textAlign: "center", marginBottom: '50px' }}>
             WHAT <span className="text-yellow-500">WE OFFER</span>
             <div className="mt-2 w-20 h-[2px] bg-gray-300 mx-auto"></div>
           </h2>
@@ -203,7 +203,7 @@ function Servicespage() {
       {/* why chooes our services */}
       <section className="bg-gray-100 py-15 pb-30 px-4 md:px-8">
         <div className="max-w-7xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 style={{fontSize: "25px"}} className=" md:text-4xl font-bold text-gray-800 uppercase">
             why choose <span className="text-[#FFAA01]">our</span> services
           </h2>
 
