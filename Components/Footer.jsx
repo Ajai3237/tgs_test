@@ -8,7 +8,7 @@ function Footer() {
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center md:text-left">
                     {/* Column 1 */}
                     <div>
-                        
+
                         <h3 className="text-white font-semibold mb-3">Follow Us</h3>
                         <div className="flex justify-center md:justify-start gap-3">
                             <a
@@ -102,8 +102,10 @@ function Footer() {
                     {/* Column 3 */}
                     <div>
                         <p className="mb-4">
-                            Lorem Ipsum Dolor Sit Amet <br />
-                            Aspernatur Exercitationem Fugiat.
+                             Traits Global Solutions
+                            2/1149/1100,Door No.2211,
+                            HiLITE Business Park,Phase2, 2nd floor, Poovangal,Pantheeramkavu
+                            Calicut, Kerala - 673014 
                         </p>
                     </div>
 
