@@ -72,51 +72,51 @@ function Aboutpage() {
     <>
       {/*  Section */}
       <div
-  className="relative w-full h-[550px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
-  style={{
-    backgroundImage:
-      "url('/Assets/pexels-vojtech-okenka-127162-392018.jpg')",
-  }}
->
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/40"></div>
+        className="relative w-full h-[550px] sm:h-[500px] md:h-[640px] bg-cover bg-center overflow-hidden"
+        style={{
+          backgroundImage:
+            "url('/Assets/pexels-vojtech-okenka-127162-392018.jpg')",
+        }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
-  {/* Content */}
-  <div className="relative mt-15 z-10 flex flex-col items-center justify-center h-full text-center px-4">
-    <motion.h1
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 120, damping: 12 }}
-      className="text-white font-bold 
+        {/* Content */}
+        <div className="relative mt-15 z-10 flex flex-col items-center justify-center h-full text-center px-4">
+          <motion.h1 
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 120, damping: 12 }}
+            className="text-white font-bold 
                  text-3xl sm:text-4xl md:text-5xl lg:text-[55px] 
                  leading-snug"
-    >
-      About <span className="text-[#FFAA01]">Us</span>
-    </motion.h1>
+          >
+            About <span className="text-[#FFAA01]">Us</span>
+          </motion.h1>
 
-    <motion.p
-      initial={{ y: 50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.3, duration: 0.8 }}
-      className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl 
+          <motion.p
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="mt-4 text-sm sm:text-base md:text-lg lg:text-lg 
                  text-gray-200 max-w-xl sm:max-w-2xl md:max-w-3xl 
                  font-['Roboto'] leading-relaxed sm:leading-[28px] md:leading-[30px] 
                  tracking-[1px] sm:tracking-[1.2px] md:tracking-[1.5px]"
-    >
-      We trust you will find our services useful to your business and we
-      are keen to engage with you on challenging assignments that
-      contribute to your growth. Our journey started over seven years ago,
-      offering basic IT services to SMEs in Kerala.
-    </motion.p>
-  </div>
-</div>
+          >
+            We trust you will find our services useful to your business and we
+            are keen to engage with you on challenging assignments that
+            contribute to your growth. Our journey started over seven years ago,
+            offering basic IT services to SMEs in Kerala.
+          </motion.p>
+        </div>
+      </div>
 
 
 
       {/* Features Section */}
       <section className="min-h-screen bg-gray-50 p-6 flex flex-col items-center justify-center">
 
-        <h2 style={{ fontSize: "25px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif", color: "#333", textAlign: "center"  , marginBottom:'50px'}}>
+        <h2 style={{ fontSize: "25px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif", color: "#333", textAlign: "center", marginBottom: '50px' }}>
           WHO WE ARE
           <span style={{ color: "#FFAA01" }}> AND</span>  WHAT WE STAND FOR
         </h2>
@@ -189,7 +189,7 @@ function Aboutpage() {
       {/* Vision & Mission */}
       <section className="bg-gray-100 py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto text-center mb-12">
-          <h2 style={{fontSize: "25px",}} className=" md:text-4xl font-bold text-gray-800">
+          <h2 style={{ fontSize: "25px", }} className=" md:text-4xl font-bold text-gray-800">
             VISION <span className="text-[#FFAA01]">AND</span> MISSION
           </h2>
         </div>

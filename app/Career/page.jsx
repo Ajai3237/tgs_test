@@ -56,7 +56,7 @@ function Careerpage() {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
                         className="mt-4 sm:mt-6 
-                 text-sm sm:text-sm md:text-lg lg:text-xl 
+                 text-sm sm:text-sm md:text-lg lg:text-lg 
                  text-gray-200 max-w-xl sm:max-w-2xl md:max-w-3xl 
                   leading-relaxed sm:leading-[28px] md:leading-[30px] 
                  tracking-[1px] sm:tracking-[1.2px] md:tracking-[1.5px]"
