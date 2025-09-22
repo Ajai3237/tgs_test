@@ -165,7 +165,7 @@ function Aboutpage() {
           >
             <div className="flex items-center gap-4 mb-4">
               {selectedFeature.icon}
-              <h2 className="text-xl font-bold font-['Roboto'] text-gray-800">
+              <h2 className="text-xl font-bold  text-gray-800">
                 {selectedFeature.title}
               </h2>
             </div>
