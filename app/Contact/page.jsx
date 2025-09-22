@@ -147,7 +147,7 @@ function Contactpage() {
             className="bg-white/10 backdrop-blur-sm border border-[#FFAA01] rounded-4xl p-8 text-center shadow-2xl hover:scale-105 transition"
           >
             <Mail className="mx-auto text-white w-10 h-10 mb-4" />
-            <p className="text-white font-semibold font-['Roboto'] tracking-[2px]">Info@Traitsglobal.Com</p>
+            <p className="text-white font-semibold tracking-[2px]">Info@Traitsglobal.Com</p>
           </motion.div>
 
           {/* Card 2 */}
@@ -158,7 +158,7 @@ function Contactpage() {
             className="bg-white/10 backdrop-blur-sm border border-[#FFAA01] rounded-4xl p-8 text-center shadow-2xl hover:scale-105 transition"
           >
             <Phone className="mx-auto text-white w-10 h-10 mb-4" />
-            <p className="text-white font-semibold font-['Roboto'] tracking-[2px]">
+            <p className="text-white font-semiboldtracking-[2px]">
               +91 97450 67890
             </p>
           </motion.div>
@@ -171,7 +171,7 @@ function Contactpage() {
             className="bg-white/10 backdrop-blur-sm border border-[#FFAA01] rounded-4xl p-8 text-center shadow-2xl hover:scale-105 transition"
           >
             <MapPin className="mx-auto text-white w-10 h-10 mb-4" />
-            <p className="text-white font-semibold font-['Roboto'] tracking-[2px]">
+            <p className="text-white font-semibold tracking-[2px]">
               2/1149/1100, Door No.2211, <br />
               HiLITE Business Park, Phase 2
             </p>
